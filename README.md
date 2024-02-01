@@ -2,6 +2,8 @@
 
 ShowSpace is a simple React application that allows users to browse TV shows and view details about each show. The app utilizes the TVMaze API for fetching show data.
 
+Deployed Link: https://tvshowsappreact.vercel.app/
+
 ## Features
 
 - **Show List:** View a list of TV shows with basic information.
