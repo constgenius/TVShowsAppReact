@@ -1,6 +1,5 @@
-// BookingForm.jsx
 import React, { useState } from 'react';
-import './BookingForm.css'; // Import your CSS for BookingForm styling
+import './BookingForm.css';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const BookingForm = ({ showName }) => {
@@ -8,6 +7,7 @@ const BookingForm = ({ showName }) => {
         name: '',
         email: '',
     });
+    const [isBooked, setIsBooked] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -18,7 +18,10 @@ const BookingForm = ({ showName }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission (you can store data in local/session storage here)
+
+        setTimeout(() => {
+            setIsBooked(true);
+        }, 1000);
     };
 
     return (
@@ -33,8 +36,10 @@ const BookingForm = ({ showName }) => {
                     <label htmlFor="email">Email:</label>
                     <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
                 </div>
-                <button type="submit" className="book-now-button">Book Now</button>
+                <button type="submit" className="book-now-button"> {isBooked === true ? "Booking Successfull" : "Book Now"}</button>
             </form>
+
+
         </div>
     );
 };
