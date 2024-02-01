@@ -1,0 +1,136 @@
+/* ShowDetails.css */
+
+.show-details-container {
+    max-width: 800px;
+    margin: 36px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.show-details-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.show-details-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.show-details-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.show-details-info {
+    flex: 1;
+    margin: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.show-details-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.show-details-info a:hover {
+    background-color: #2980b9;
+}
+
+.show-details-summary {
+    margin-bottom: 20px;
+}
+
+.show-details-booking-form {
+    text-align: center;
+}
+
+.book-now-button {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #219653;
+}
+
+.booking-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.booking-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    outline: none;
+}
+
+.close-modal:hover {
+    background: black;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .show-details-content {
+        flex-direction: column;
+    }
+
+    .show-details-header {
+        font-size: 24px;
+    }
+
+    .show-details-info {
+        margin: 20px 0;
+    }
+
+}
