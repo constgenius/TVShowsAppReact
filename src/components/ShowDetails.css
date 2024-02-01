@@ -120,7 +120,7 @@
     color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .show-details-content {
         flex-direction: column;
     }
